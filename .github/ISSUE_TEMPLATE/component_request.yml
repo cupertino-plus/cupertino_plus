@@ -1,0 +1,79 @@
+name: Component Request
+description: Request a new component to be added to Cupertinew
+title: "feat(component): "
+labels: ["feat", "component", "triage"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time to fill out this component request!
+        Please make sure the component you want to be added to the library doesn't exist, and an existing issue ticket hasn't been created already.
+
+  - type: input
+    id: contact
+    attributes:
+      label: Contact Details
+      description: How can we get in touch with you if we need more info?
+      placeholder: email@example.com
+    validations:
+      required: false
+
+  - type: input
+    id: name
+    attributes:
+      label: Component Name
+      description: What is the name of the component you want to see built?
+      placeholder: CupertinewListTile
+    validations:
+      required: true
+
+  - type: input
+    id: apple-link
+    attributes:
+      label: Documentation URL
+      description: Is there official documentation about this component? If so, link it here.
+      placeholder: https://developer.apple.com/design/human-interface-guidelines/ios/...
+    validations:
+      required: false
+
+  - type: textarea
+    id: description
+    attributes:
+      label: Description
+      description: Describe the component and its interaction. The more detail, the better.
+    validations:
+      required: true
+
+  - type: textarea
+    id: screenshots
+    attributes:
+      label: Screenshots
+      description: Please attach screenshots and videos of the component in use in a native iOS application or playground.
+    validations:
+      required: true
+
+  - type: textarea
+    id: comments
+    attributes:
+      label: Other comments
+      description: If you have anything else you'd like us to know, feel free to put it here!
+    validations:
+      required: false
+
+  - type: checkboxes
+    id: issues-checked
+    attributes:
+      label: Checked the other issues?
+      description: By submitting this issue, you agree you have verified this component hasn't already been built, and no other issues related to this component already exist.
+      options:
+        - label: I have checked and verified this is the first request for this component.
+          required: true
+
+  - type: checkboxes
+    id: terms
+    attributes:
+      label: Code of Conduct
+      description: By submitting this issue, you agree you are willing to provide more information if necessary in a timely manner.
+      options:
+        - label: I agree to cooperate in resolving this component request.
+          required: true
