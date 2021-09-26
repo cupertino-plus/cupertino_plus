@@ -1,0 +1,29 @@
+name: Chore Ticket
+description: Create a new chore ticket
+title: "chore: "
+labels: ["chore", "triage"]
+body:
+  - type: input
+    id: name
+    attributes:
+      label: Task name
+      description: What is this task called?
+    validations:
+      required: true
+
+  - type: textarea
+    id: description
+    attributes:
+      label: Description
+      description: Describe this task and the steps involved.
+      placeholder: In order to... we need to...
+    validations:
+      required: true
+
+  - type: textarea
+    id: comments
+    attributes:
+      label: Other comments
+      description: If you have anything else you'd like us to know, feel free to put it here!
+    validations:
+      required: false
