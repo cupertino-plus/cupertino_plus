@@ -1,0 +1,18 @@
+name: cupertinew
+description: A collection of pixel-perfect iOS-styled components and properties
+  for Flutter, following the official guidelines.
+version: 0.0.1
+
+environment:
+  sdk: ">=2.13.0 <3.0.0"
+
+dependencies:
+  # Uses a wide supported range for best compatibility.
+  equatable: ">=1.0.0"
+  flutter:
+    sdk: flutter
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  very_good_analysis: ^2.3.0
