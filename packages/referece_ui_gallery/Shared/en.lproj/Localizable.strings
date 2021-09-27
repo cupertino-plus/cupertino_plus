@@ -1,0 +1,12 @@
+/* 
+  Localizable.strings
+  Reference UI Gallery
+
+  Created by Jeroen Meijer on 27/09/2021.
+  
+*/
+
+// ----> English (US)
+
+"home.header" = "Welcome! This is the Cupertinew Reference UI Gallery, a component and theme gallery used for creating new Cupertinew widgets.";
+"home.components.header" = "Components";
