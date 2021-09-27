@@ -1,0 +1,24 @@
+name: Cupertinew
+packages:
+  - packages/**
+  - "*"
+
+ide:
+  vscode: true
+  intellij: false
+
+scripts:
+  analyze:
+    run: melos exec "flutter analyze . --fatal-infos"
+    description: Run dart analyzer in a specific package.
+  get:
+    run: melos exec "flutter pub get"
+    description: Get all packages.
+  test:
+    description: Run tests in a specific package.
+    run: melos exec "flutter pub get && flutter test"
+    select-package:
+      dir-exists:
+        - "test/"
+    env:
+      MELOS_TEST: true
