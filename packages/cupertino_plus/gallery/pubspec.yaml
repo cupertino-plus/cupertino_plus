@@ -1,0 +1,24 @@
+name: cupertino_plus_gallery
+description: A gallery project showcasing all Cupertino Plus widgets, themes
+  properties and icons.
+publish_to: none
+
+version: 1.0.0+1
+
+environment:
+  sdk: ">=2.12.0 <3.0.0"
+
+dependencies:
+  cupertino_icons: ^1.0.2
+  cupertino_plus:
+    path: ../
+  flutter:
+    sdk: flutter
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  very_good_analysis: ^2.3.0
+
+flutter:
+  uses-material-design: true

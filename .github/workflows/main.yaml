@@ -1,4 +1,4 @@
-name: cupertinew
+name: cupertino_plus
 
 on:
   pull_request:
