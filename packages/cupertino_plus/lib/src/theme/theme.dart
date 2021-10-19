@@ -61,13 +61,13 @@ class CupertinoPlusTheme extends InheritedWidget {
   ///
   /// If no [CupertinoPlusThemeData] can be found, this returns `null`.
   static CupertinoPlusThemeData? maybeOf(BuildContext context) {
-    final cupertino_plusTheme =
+    final cupertinoPlusTheme =
         context.dependOnInheritedWidgetOfExactType<CupertinoPlusTheme>();
     final theme = Theme.of(context);
 
     return theme.brightness == Brightness.light
-        ? cupertino_plusTheme?.lightTheme
-        : cupertino_plusTheme?.darkTheme;
+        ? cupertinoPlusTheme?.lightTheme
+        : cupertinoPlusTheme?.darkTheme;
   }
 
   @override
