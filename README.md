@@ -9,13 +9,13 @@ A collection of pixel-perfect iOS-styled components and properties for Flutter, 
 
 By [Jeroen Meijer](https://github.com/jeroen-meijer) and [Reuben Turner](https://github.com/GroovinChip).
 
-## About the Cupertino_plus project
+## About the cupertino_plus project
 
 > Last updated: 2021-09-28
 
 ### Reasoning
 
-Cupertino_plus is a Flutter project that spawned out of a desire to create a set of pixel-perfect iOS-styled components and properties for Flutter.
+cupertino_plus is a Flutter project that spawned out of a desire to create a set of pixel-perfect iOS-styled components and properties for Flutter.
 
 While support for widgets following Material Design is absolutely stellar and offers a lot of flexibility, we feel like the current iOS component support in Flutter is severely lacking in some parts, ranging from components and scaffolding that have been available since iOS 13 (which is 2 versions behind at the time of writing) that still have not been added, existing components being out of date, and navigation paradigms that are either completely unavailable or are implemented in a package (on [pub.dev][pub_link]) with poor code quality or support.
 

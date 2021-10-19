@@ -12,6 +12,9 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: packages/cupertino_plus
 
     steps:
       - uses: actions/checkout@v2
