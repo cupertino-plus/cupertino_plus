@@ -19,11 +19,11 @@ class CupertinoPlusThemeData with Diagnosticable {
   }) {
     // Use `Brightness.light` as default if none is given
     brightness ??= Brightness.light;
-    final _isDark = brightness == Brightness.dark;
+    final isDark = brightness == Brightness.dark;
 
     // Use `CupertinoPlusColors.dark()` or` CupertinoPlusColors.light()`
     // as default, depending on the value of `brightness`.
-    colors ??= _isDark
+    colors ??= isDark
         ? const CupertinoPlusColors.dark()
         : const CupertinoPlusColors.light();
 
