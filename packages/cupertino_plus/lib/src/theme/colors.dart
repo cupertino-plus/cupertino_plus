@@ -116,14 +116,6 @@ class CupertinoPlusColors extends Equatable {
     return CupertinoPlusTheme.of(context).colors;
   }
 
-  /// Looks up the nearest [CupertinoPlusTheme] in the given [BuildContext] and
-  /// returns its colors.
-  ///
-  /// If no [CupertinoPlusTheme] can be found, this returns `null`.
-  static CupertinoPlusColors? maybeOf(BuildContext context) {
-    return CupertinoPlusTheme.maybeOf(context)?.colors;
-  }
-
   /// Creates a copy of this theme with the given fields replaced with the new
   /// values.
   CupertinoPlusColors copyWith({
