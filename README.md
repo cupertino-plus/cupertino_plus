@@ -55,5 +55,5 @@ Since we are still working out the details, we would like to ask you to hold off
 [very_good_analysis_badge]: https://img.shields.io/badge/style-very_good_analysis-B22C89.svg
 [very_good_analysis_link]: https://pub.dev/packages/very_good_analysis
 [veggie_seasons_repo]: https://github.com/flutter/samples/tree/master/veggieseasons
-[cupertino_plus_project_board]: https://github.com/jeroen-meijer/cupertino_plus/projects/1
+[cupertino_plus_project_board]: https://github.com/cupertino-plus/cupertino_plus/projects/1
 [pub_link]: https://pub.dev

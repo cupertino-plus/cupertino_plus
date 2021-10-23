@@ -5,7 +5,7 @@
 
 ### ⚠️ Experimental and work in progress ⚠️
 
-#### [Learn more here](https://github.com/cupertinew/cupertino_plus/blob/main/README.md).
+#### [Learn more here](https://github.com/cupertino-plus/cupertino_plus/blob/main/README.md).
 
 > Note: The pub listing for this package only exists to reserve the name for the package.
 > Using this package as a dependency in its current state is redundant and not recommended.
