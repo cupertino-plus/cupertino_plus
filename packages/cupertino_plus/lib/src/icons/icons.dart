@@ -9,8 +9,6 @@ import 'package:flutter/widgets.dart';
 ///
 /// Source: https://www.figma.com/community/file/886999666531731323
 class CupertinoPlusIcons {
-  CupertinoPlusIcons._();
-
   // TODO(jeroen-meijer): Add documentation for each icon (with a picture).
   // ignore_for_file: public_member_api_docs
 
