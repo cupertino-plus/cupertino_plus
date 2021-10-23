@@ -12,7 +12,7 @@ import 'package:flutter/foundation.dart';
 class CupertinoPlusThemeData with Diagnosticable {
   /// {@macro cupertino_plus_theme_data}
   ///
-  /// Builds a `StreamFeedThemeData` with default values, if none are given.
+  /// Builds a `CupertinoPlusThemeData` with default values, if none are given.
   factory CupertinoPlusThemeData({
     CupertinoPlusColors? colors,
     Brightness? brightness,
