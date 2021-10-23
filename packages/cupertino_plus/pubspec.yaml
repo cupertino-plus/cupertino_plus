@@ -9,12 +9,12 @@ environment:
   sdk: ">=2.13.0 <3.0.0"
 
 dependencies:
-  # Uses a wide supported range for best compatibility.
-  equatable: ">=1.0.0"
+  equatable: ^2.0.3
   flutter:
     sdk: flutter
 
 dev_dependencies:
   flutter_test:
     sdk: flutter
+  matcher: ^0.12.10
   very_good_analysis: ^2.4.0
