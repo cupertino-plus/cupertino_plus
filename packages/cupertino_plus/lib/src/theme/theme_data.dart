@@ -1,28 +1,66 @@
-import 'package:cupertino_plus/cupertino_plus.dart';
+import 'dart:ui';
 
-// TODO(jeroen-meijer): Add documentation.
+import 'package:cupertino_plus/cupertino_plus.dart';
+import 'package:flutter/foundation.dart';
+
+// ignore_for_file: cascade_invocations
 
 /// {@template cupertino_plus_theme_data}
-/// A theme data class used by Cupertino Plus widgets.
-///
+/// Defines the configuration of the overall visual `StreamFeedTheme` for a
+/// particular widget subtree.
 /// {@endtemplate}
-class CupertinoPlusThemeData {
+class CupertinoPlusThemeData with Diagnosticable {
   /// {@macro cupertino_plus_theme_data}
-  const CupertinoPlusThemeData({
-    required this.colors,
-    // TODO(jeroen-meijer): Add other properties here.
-  });
+  ///
+  /// Builds a `StreamFeedThemeData` with default values, if none are given.
+  factory CupertinoPlusThemeData({
+    CupertinoPlusColors? colors,
+    Brightness? brightness,
+  }) {
+    // Use `Brightness.light` as default if none is given
+    brightness ??= Brightness.light;
+    final _isDark = brightness == Brightness.dark;
+
+    // Use `CupertinoPlusColors.dark()` or` CupertinoPlusColors.light()`
+    // as default, depending on the value of `brightness`.
+    colors ??= _isDark
+        ? const CupertinoPlusColors.dark()
+        : const CupertinoPlusColors.light();
+
+    return CupertinoPlusThemeData.raw(
+      colors: colors,
+      brightness: brightness,
+    );
+  }
 
   /// The default theme for light-themed Cupertino Plus widgets.
-  const CupertinoPlusThemeData.light({
-    this.colors = const CupertinoPlusColors.light(),
-  });
+  factory CupertinoPlusThemeData.light() => CupertinoPlusThemeData(
+    colors: const CupertinoPlusColors.light(),
+    brightness: Brightness.light,
+  );
 
   /// The default theme for dark-themed Cupertino Plus widgets.
-  const CupertinoPlusThemeData.dark({
-    this.colors = const CupertinoPlusColors.dark(),
+  factory CupertinoPlusThemeData.dark() => CupertinoPlusThemeData(
+    colors: const CupertinoPlusColors.dark(),
+    brightness: Brightness.dark,
+  );
+
+  /// Raw `CupertinoPlusThemeData` initialization.
+  const CupertinoPlusThemeData.raw({
+    required this.colors,
+    required this.brightness,
   });
 
-  /// The colors used to style the Cupertino Plus widgets.
+  /// The colors used to style descendant Cupertino Plus widgets.
   final CupertinoPlusColors colors;
+
+  /// The `brightness` of this theme.
+  final Brightness brightness;
+
+  @override
+  void debugFillProperties(DiagnosticPropertiesBuilder properties) {
+    super.debugFillProperties(properties);
+    properties.add(DiagnosticsProperty<CupertinoPlusColors>('colors', colors));
+    properties.add(EnumProperty<Brightness>('brightness', brightness));
+  }
 }
