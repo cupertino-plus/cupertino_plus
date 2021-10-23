@@ -72,5 +72,78 @@ void main() {
         ],
       );
     });
+
+    testWidgets('CupertinoPlusTheme is null', (tester) async {
+      late BuildContext capturedContext;
+      await tester.pumpWidget(
+        MaterialApp(
+          home: Builder(
+            builder: (context) {
+              capturedContext = context;
+              return Container();
+            },
+          ),
+        ),
+      );
+
+      expect(
+          () => CupertinoPlusTheme.of(capturedContext), throwsAssertionError);
+    });
+
+    testWidgets('StreamFeedTheme updateShouldNotify', (tester) async {
+      TestCupertinoPlusTheme? result;
+      final builder = Builder(
+        builder: (context) {
+          result = context
+              .dependOnInheritedWidgetOfExactType<TestCupertinoPlusTheme>();
+          return Container();
+        },
+      );
+
+      final first = TestCupertinoPlusTheme(
+        shouldNotify: true,
+        data: CupertinoPlusThemeData.light(),
+        child: builder,
+      );
+
+      final second = TestCupertinoPlusTheme(
+        shouldNotify: false,
+        data: CupertinoPlusThemeData.light(),
+        child: builder,
+      );
+
+      final third = TestCupertinoPlusTheme(
+        shouldNotify: true,
+        data: CupertinoPlusThemeData.light(),
+        child: builder,
+      );
+
+      await tester.pumpWidget(first);
+      expect(result, equals(first));
+
+      await tester.pumpWidget(second);
+      expect(result, equals(first));
+
+      await tester.pumpWidget(third);
+      expect(result, equals(third));
+    });
   });
+}
+
+class TestCupertinoPlusTheme extends CupertinoPlusTheme {
+  const TestCupertinoPlusTheme({
+    Key? key,
+    required CupertinoPlusThemeData data,
+    required Widget child,
+    required this.shouldNotify,
+  }) : super(key: key, data: data, child: child);
+
+  // ignore: diagnostic_describe_all_properties
+  final bool shouldNotify;
+
+  @override
+  bool updateShouldNotify(covariant CupertinoPlusTheme oldWidget) {
+    super.updateShouldNotify(oldWidget);
+    return shouldNotify;
+  }
 }
