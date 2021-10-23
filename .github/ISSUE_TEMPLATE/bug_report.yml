@@ -9,7 +9,7 @@ body:
     attributes:
       value: |
         Thanks for taking the time to fill out this bug report!
-        Use this issue form if you have encountered a bug or issue with a Cupertinew component or interaction.
+        Use this issue form if you have encountered a bug or issue with a Cupertino Plus component or interaction.
 
   - type: input
     id: contact
@@ -27,10 +27,10 @@ body:
       description: What component or aspect of the library are you having trouble with?
       multiple: true
       options:
-        - "CupertinewListTile"
-        - "CupertinewListTileDivider"
-        - "CupertinewListTileGroup"
-        - "CupertinewTheme/Data/Colors"
+        - "CupertinoListTile"
+        - "CupertinoListTileDivider"
+        - "CupertinoListTileGroup"
+        - "CupertinoPlusTheme/Data/Colors"
     validations:
       required: true
 

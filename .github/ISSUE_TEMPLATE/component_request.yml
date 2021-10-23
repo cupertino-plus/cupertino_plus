@@ -1,5 +1,5 @@
 name: Component Request
-description: Request a new component to be added to Cupertinew
+description: Request a new component to be added to Cupertino Plus
 title: "feat(component): "
 labels: ["feat", "component", "triage"]
 body:
@@ -23,7 +23,7 @@ body:
     attributes:
       label: Component Name
       description: What is the name of the component you want to see built?
-      placeholder: CupertinewListTile
+      placeholder: CupertinoListTile
     validations:
       required: true
 

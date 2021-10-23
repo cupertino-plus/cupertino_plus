@@ -1,4 +1,4 @@
-name: Cupertinew
+name: cupertino_plus
 packages:
   - packages/**
   - "*"

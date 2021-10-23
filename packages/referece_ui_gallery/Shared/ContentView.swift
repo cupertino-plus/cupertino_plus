@@ -19,7 +19,7 @@ struct ContentView: View {
         }
         
         Section(header: Text("home.components.header".localized)) {
-          Text("CupertinewListTile")
+          Text("CupertinoListTile")
           Text("// The rest goes here...")
         }
       }.listStyle(.insetGrouped)

@@ -1,21 +1,24 @@
-# cupertinew
+# cupertino_plus
 
 [![style: very good analysis][very_good_analysis_badge]][very_good_analysis_link]
 [![License: MIT][license_badge]][license_link]
 
 ### ⚠️ Experimental and work in progress ⚠️
 
+> Note: The pub listing for this package only exists to reserve the name for the package.
+> Using this package as a dependency in its current state is redundant and not recommended.
+
 A collection of pixel-perfect iOS-styled components and properties for Flutter, following the official guidelines.
 
 By [Jeroen Meijer](https://github.com/jeroen-meijer) and [Reuben Turner](https://github.com/GroovinChip).
 
-## About the Cupertinew project
+## About the cupertino_plus project
 
 > Last updated: 2021-09-28
 
 ### Reasoning
 
-Cupertinew is a Flutter project that spawned out of a desire to create a set of pixel-perfect iOS-styled components and properties for Flutter.
+cupertino_plus is a Flutter project that spawned out of a desire to create a set of pixel-perfect iOS-styled components and properties for Flutter.
 
 While support for widgets following Material Design is absolutely stellar and offers a lot of flexibility, we feel like the current iOS component support in Flutter is severely lacking in some parts, ranging from components and scaffolding that have been available since iOS 13 (which is 2 versions behind at the time of writing) that still have not been added, existing components being out of date, and navigation paradigms that are either completely unavailable or are implemented in a package (on [pub.dev][pub_link]) with poor code quality or support.
 
@@ -39,7 +42,7 @@ At this point, we only have some ideas, ambitions and short-term plans, and this
 
 Our current roadmap is extremely rough and we are working on it -- the project only just started, after all.
 
-In the meantime, please have a look at the [project board][cupertinew_project_board] and issue #1 for more details.
+In the meantime, please have a look at the [project board][cupertino_plus_project_board] and issue #1 for more details.
 
 ### How can I contribute?
 
@@ -52,5 +55,5 @@ Since we are still working out the details, we would like to ask you to hold off
 [very_good_analysis_badge]: https://img.shields.io/badge/style-very_good_analysis-B22C89.svg
 [very_good_analysis_link]: https://pub.dev/packages/very_good_analysis
 [veggie_seasons_repo]: https://github.com/flutter/samples/tree/master/veggieseasons
-[cupertinew_project_board]: https://github.com/jeroen-meijer/cupertinew/projects/1
+[cupertino_plus_project_board]: https://github.com/cupertino-plus/cupertino_plus/projects/1
 [pub_link]: https://pub.dev

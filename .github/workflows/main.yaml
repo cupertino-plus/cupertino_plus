@@ -1,4 +1,4 @@
-name: cupertinew
+name: cupertino_plus
 
 on:
   pull_request:
@@ -12,6 +12,9 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: packages/cupertino_plus
 
     steps:
       - uses: actions/checkout@v2
@@ -19,6 +22,12 @@ jobs:
       - uses: subosito/flutter-action@v1.4.0
         with:
           channel: stable
+
+      - name: Log current stable Flutter version
+        run: flutter --version
+
+      - name: Upgrade Flutter (temporary)
+        run: flutter upgrade
 
       - name: Install Dependencies
         run: flutter packages get
@@ -32,5 +41,6 @@ jobs:
       - name: Run tests
         run: flutter test --no-pub --coverage --test-randomize-ordering-seed random
 
-      - name: Check Code Coverage
-        uses: VeryGoodOpenSource/very_good_coverage@v1.1.1
+      # Temporarily disabled until proper package development starts.
+      # - name: Check Code Coverage
+      #   uses: VeryGoodOpenSource/very_good_coverage@v1.1.1
