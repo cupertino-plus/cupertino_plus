@@ -23,6 +23,12 @@ jobs:
         with:
           channel: stable
 
+      - name: Log current stable Flutter version
+        run: flutter --version
+
+      - name: Upgrade Flutter (temporary)
+        run: flutter upgrade
+
       - name: Install Dependencies
         run: flutter packages get
 
