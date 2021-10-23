@@ -12,11 +12,12 @@ import 'package:flutter/material.dart';
 // https://github.com/flutter/samples/tree/master/veggieseasons
 // ---------
 
+// TODO(jeroen-meijer): Add documentation.
+
 /// {@template cupertino_plus_list_tile}
 /// A quick, dirty and eye-balled version of the iOS list tile.
 /// Do not use this.
 ///
-/// TODO(@jeroen-meijer): Add documentation.
 /// {@endtemplate}
 class CupertinoPlusListTile extends StatefulWidget {
   /// {@macro cupertino_plus_list_tile}
@@ -33,7 +34,7 @@ class CupertinoPlusListTile extends StatefulWidget {
     this.trailing,
   }) : super(key: key);
 
-  // TODO(@jeroen-meijer): Remove this line and add documentation.
+  // TODO(jeroen-meijer): Remove this line and add documentation.
   // ignore_for_file: public_member_api_docs
 
   final bool isNavigationButton;
@@ -227,7 +228,9 @@ class _CupertinoPlusListTileState extends State<CupertinoPlusListTile>
                       Icon(
                         Icons.arrow_forward_ios_rounded,
                         color: _selectByTheme(
-                            _kTrailingIconColorLight, _kTrailingIconColorDark),
+                          _kTrailingIconColorLight,
+                          _kTrailingIconColorDark,
+                        ),
                         size: _kTrailingIconSize,
                       ),
                     ],

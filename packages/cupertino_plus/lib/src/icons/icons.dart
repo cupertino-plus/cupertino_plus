@@ -11,7 +11,7 @@ import 'package:flutter/widgets.dart';
 class CupertinoPlusIcons {
   CupertinoPlusIcons._();
 
-  // TODO(@jeroen-meijer): Add documentation for each icon (with a picture).
+  // TODO(jeroen-meijer): Add documentation for each icon (with a picture).
   // ignore_for_file: public_member_api_docs
 
   static const _kFontFamily = 'SF Symbols 3';

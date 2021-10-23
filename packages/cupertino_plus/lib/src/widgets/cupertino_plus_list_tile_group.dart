@@ -1,7 +1,7 @@
 import 'package:cupertino_plus/cupertino_plus.dart';
 import 'package:flutter/material.dart';
 
-// TODO(@jeroen-meijer): Remove this line and add documentation.
+// TODO(jeroen-meijer): Remove this line and add documentation.
 // ignore_for_file: public_member_api_docs
 
 enum CupertinoPlusDividerBehavior {
@@ -56,7 +56,6 @@ class CupertinoPlusListTileGroup extends StatelessWidget {
         divider = const CupertinoPlusListTileDivider.forIconTile();
         break;
       case CupertinoPlusDividerBehavior.none:
-      default:
         divider = null;
         break;
     }

@@ -2,6 +2,8 @@ name: cupertino_plus
 description: A collection of pixel-perfect iOS-styled components and properties
   for Flutter, following the official guidelines.
 version: 0.0.1-dev.1
+homepage: https://github.com/cupertinew/cupertino_plus/tree/main/packages/cupertino_plus
+repository: https://github.com/cupertinew/cupertino_plus/tree/main/packages/cupertino_plus
 
 environment:
   sdk: ">=2.13.0 <3.0.0"
@@ -15,4 +17,4 @@ dependencies:
 dev_dependencies:
   flutter_test:
     sdk: flutter
-  very_good_analysis: ^2.3.0
+  very_good_analysis: ^2.4.0

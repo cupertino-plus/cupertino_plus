@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-// TODO(@jeroen-meijer): Remove this line and add documentation.
+// TODO(jeroen-meijer): Remove this line and add documentation.
 // ignore_for_file: public_member_api_docs
 
 class CupertinoPlusListTileDivider extends StatelessWidget {
@@ -11,10 +11,22 @@ class CupertinoPlusListTileDivider extends StatelessWidget {
     this.indent = 16,
     this.endIndent = 0,
     this.color,
-  })  : assert(height == null || height >= 0),
-        assert(thickness == null || thickness >= 0),
-        assert(indent == null || indent >= 0),
-        assert(endIndent == null || endIndent >= 0),
+  })  : assert(
+          height == null || height >= 0,
+          'The height of the divider must not be negative.',
+        ),
+        assert(
+          thickness == null || thickness >= 0,
+          'The thickness of the divider must not be negative.',
+        ),
+        assert(
+          indent == null || indent >= 0,
+          'The indent of the divider must not be negative.',
+        ),
+        assert(
+          endIndent == null || endIndent >= 0,
+          'The end indent of the divider must not be negative.',
+        ),
         super(key: key);
 
   const CupertinoPlusListTileDivider.forIconTile({

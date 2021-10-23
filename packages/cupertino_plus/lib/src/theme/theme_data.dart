@@ -1,15 +1,16 @@
 import 'package:cupertino_plus/cupertino_plus.dart';
 
+// TODO(jeroen-meijer): Add documentation.
+
 /// {@template cupertino_plus_theme_data}
 /// A theme data class used by Cupertino Plus widgets.
 ///
-/// TODO(@jeroen-meijer): Add documentation.
 /// {@endtemplate}
 class CupertinoPlusThemeData {
   /// {@macro cupertino_plus_theme_data}
   const CupertinoPlusThemeData({
     required this.colors,
-    // TODO: Add other properties here.
+    // TODO(jeroen-meijer): Add other properties here.
   });
 
   /// The default theme for light-themed Cupertino Plus widgets.

@@ -85,7 +85,7 @@ class CupertinoPlusColors extends Equatable {
     this.systemGray6 = const Color.fromARGB(255, 28, 28, 30),
   });
 
-  // TODO(@jeroen-meijer): Remove this line and add documentation.
+  // TODO(jeroen-meijer): Remove this line and add documentation.
   // ignore_for_file: public_member_api_docs
 
   final Brightness brightness;

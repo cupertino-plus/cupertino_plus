@@ -4,10 +4,11 @@ import 'package:flutter/material.dart';
 export 'colors.dart';
 export 'theme_data.dart';
 
+// TODO(jeroen-meijer): Add documentation.
+
 /// {@template cupertino_plus_theme}
 /// A widget that provides theme data used by Cupertino Plus widgets.
 ///
-/// TODO(@jeroen-meijer): Add documentation.
 /// {@endtemplate}
 class CupertinoPlusTheme extends InheritedWidget {
   /// {@macro cupertino_plus_theme}
